@@ -1,0 +1,34 @@
+<module>
+	<rawname>avantfax</rawname>
+	<name>AvantFAX</name>
+	<version>0.1.0.0</version>
+	<publisher>Josh North/Point808.com</publisher>
+	<license>GPLv3+</license>
+	<candisable>yes</candisable>
+	<canuninstall>yes</canuninstall>
+	<changelog>
+		*0.1.0.0* Original Release (beta)
+	</changelog>
+	<description>
+		Provides a link to AvantFAX on an IncrediblePBX/IncredibleFAX Ubuntu 14 install
+	</description>
+	<attention>
+		THIS WILL ONLY WORK IF INCREDIBLEFAX IS INSTALLED VIA THE PIAF SCRIPT ON UBUNTU 14!  Or perhaps if you get lucky.
+	</attention>
+	<info>https://git.point808.com/Point808/FreePBX-AvantFAX</info>
+	<menuitems>
+		<avantfax 
+			category="AvantFAX" 
+			href="/avantfax" 
+			target="fax" 
+			access="all"
+			requires_auth="false"
+			>AvantFAX</avantfax>
+	</menuitems>
+	<depends>
+		<module>core</module>
+		<version>ge2.2</version>
+    </depends>
+	<category>Admin</category>
+</module>
+
